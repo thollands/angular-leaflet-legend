@@ -1,0 +1,9 @@
+<div #legendControl class="leaflet-bar leaflet-control legend-control">
+    <h1>Legend</h1>
+    <div class="legend-control-items">
+        <div *ngFor="let item of symbology" class="legend-control-item">
+            <div class="legend-item-patch" style="background-color: {{ item.colour }};"></div>
+            <span class="legend-item-label">{{ item.label }}</span>
+        </div>
+    </div>
+</div>
